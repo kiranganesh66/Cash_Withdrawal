@@ -1,4 +1,6 @@
 import {Component} from 'react'
+import DenominationItem from '../DenominationItem'
+
 import './index.css'
 
 class CashWithdrawal extends Component {
@@ -24,6 +26,13 @@ class CashWithdrawal extends Component {
             </div>
           </div>
           {/* //withdraw */}
+          <div className="withdraw_cN">
+            <h1>WithDraw</h1>
+            <p>Choose sum (in rupees)</p>
+            <ul>
+              <DenominationItem />
+            </ul>
+          </div>
         </div>
       </div>
     )
